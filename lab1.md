@@ -18,12 +18,12 @@ CSE 15L, Section | *explain why what's being printed is being printed for each p
 **Using command with no arguments**
 
 
-![no args](cd directory.png)
+![no args](cdnoarg.png)
 
 **Using command w/ path to directory as argument**
 
 
-![direct](cd directory.png)
+![direct](cddirectory2.png)
 
 **Using command/ path to file as argument**
-![no args](cd file.png)
+![no args](cdfile.png)
