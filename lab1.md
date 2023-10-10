@@ -26,4 +26,22 @@ CSE 15L, Section | *explain why what's being printed is being printed for each p
 ![direct](cddirectory2.png)
 
 **Using command/ path to file as argument**
+
+
 ![no args](cdfile.png)
+
+## ls command
+**Using command with no arguments**
+
+
+![no args](lsnoarg.png)
+
+**Using command w/ path to directory as argument**
+
+
+![direct](lsdirectory2.png)
+
+**Using command/ path to file as argument**
+
+
+![no args](lsfile.png)
