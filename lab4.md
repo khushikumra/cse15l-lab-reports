@@ -6,8 +6,8 @@ CSE 15L
 ![no args](step4.png)
 
 **Keys Pressed**
-ssh cs15lfa23at@ieng6.ucsd.edu<enter>
-(password)<enter>
+ssh cs15lfa23at@ieng6.ucsd.edu&lt;enter&gt;
+(password)&lt;enter&gt;
 
 **Summary**
 I logged in to my ieng6 account.
@@ -18,7 +18,7 @@ I logged in to my ieng6 account.
 ![no args](step5.png)
 
 **Keys Pressed**
-git clone git@github.com:khushikumra/lab7.git<enter>
+git clone git@github.com:khushikumra/lab7.git&lt;enter&gt;
 
 
 **Summary**
