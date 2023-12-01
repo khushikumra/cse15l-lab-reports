@@ -34,18 +34,21 @@ The lab7 file was already git cloned into the workspace so it showed up as an ex
 ## Step 6
 
 
-![no args](step6.png)
+![no args](step6_1.png)
+![no args](step6_2.png)
 
 **Keys Pressed**
 
 
-ls &lt;enter&gt; cd lab7 &lt;enter&gt; ls &lt;enter&gt; javac ListExamples.java &lt;enter&gt; java ListExamples &lt;enter&gt;
+ls &lt;enter&gt; cd lab7 &lt;enter&gt; ls &lt;enter&gt; javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar ListExamples.java &lt;enter&gt; java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamples &lt;enter&gt;
 
 
 
 
-**Commands and Effects Summary** I cd'd into the lab7 repository, used ls to check the files in the repository, and 
-then ran ListExamples.java to see why the file fails. 
+**Commands and Effects Summary** 
+
+I cd'd into the lab7 repository, used ls to check the files in the repository, and 
+then ran ListExamples.java with the JUnit tests to see why the file fails. 
 
 
 ## Step 7
@@ -80,10 +83,11 @@ vim ListExamples.java
 ![no args](catnoargs.png)
 
 **Keys Pressed**
-The working directory here was home. There is no output here with no arguments because the cat command is meant to look for a file/directory and it can't find one because we haven't given it an argument, or in other words, something to find. Not an error.
+&lt;up&gt; &lt;up&gt; &lt;up&gt; &lt;enter&gt; &lt;up&gt; &lt;up&gt; &lt;up&gt; &lt;enter&gt; 
+
 
 
 
 **Commands and Effects Summary**
 
-
+went up three time o access javac -cp command. went up another three times to acces java -cp command
