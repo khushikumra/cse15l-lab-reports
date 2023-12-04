@@ -2,6 +2,10 @@
 
 # Lab 5 Report: Khushi Kumra 
 CSE 15L
+
+PLEASE READ: My github was showing the md file on the published page with the raw code, here is the path, and I can see the preview in github, which is what this pdf is!
+https://khushikumra.github.io/cse15l-lab-reports/lab5.md
+
 ## Step 1 - Student Post
 
 Subject: Help! Unexpected Error in Matrix Processing
