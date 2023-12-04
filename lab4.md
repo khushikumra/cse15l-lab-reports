@@ -3,7 +3,7 @@ CSE 15L
 ## Step 4
 
 
-![no args](step4.png)
+![no args](sunstep4.png)
 
 **Keys Pressed**
 
@@ -18,43 +18,43 @@ I logged in to my ieng6 account.
 ## Step 5
 
 
-![no args](step5.png)
+![no args](sunstep5.png)
 
 **Keys Pressed**
 
 
-git clone git@github.com:khushikumra/lab7.git&lt;enter&gt;
+git clone git@github.com:khushikumra/lab7.1.git&lt;enter&gt;
 
 
 **Summary**
 
 
-The lab7 file was already git cloned into the workspace so it showed up as an existing directory in the terminal.
+The lab7 file was git cloned into my home directory on EdStem. I had to save it as 7.1 because I had already cloned lab7 into EdStem, so I changed the newly forked repository name. 
+
 
 ## Step 6
 
 
-![no args](step6_1.png)
-![no args](step6_2.png)
+![no args](hello1.png)
+
 
 **Keys Pressed**
 
 
-ls &lt;enter&gt; cd lab7 &lt;enter&gt; ls &lt;enter&gt; javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar ListExamples.java &lt;enter&gt; java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamples &lt;enter&gt;
-
+./test.sh &lt;enter&gt;
 
 
 
 **Commands and Effects Summary** 
 
-I cd'd into the lab7 repository, used ls to check the files in the repository, and 
-then ran ListExamples.java with the JUnit tests to see why the file fails. 
+I ran the bash script, test.sh to see the tests fail.  
 
 
 ## Step 7
 
 
-![no args](catnoargs.png)
+![no args](sunstep7.png)
+
 
 **Keys Pressed**
 
@@ -63,28 +63,42 @@ vim ListExamples.java &lt;enter&gt; 42(j) 11(l) i2 &lt;esc&gt; l dl :wq &lt;ente
 
 
 **Commands and Effects Summary**
+I used vim to edit ListExample.java, and used the vim commands to move the cursor to the final loop in merge, used the vim commands to move the cursor over index1 to change index1 to index2 in the final merge loop to increment index2. 
+
+
 
 ## Step 8
 
 
-![no args](catnoargs.png)
+![no args](hello2.png)
 
 **Keys Pressed**
-vim ListExamples.java 
-
+./test.sh &lt;enter&gt;
 
 
 **Commands and Effects Summary**
+
+I ran the bash script, test.sh to see the tests succeed, which they did as seen.  
+
+
 
 
 ## Step 9
 
 
-![no args](catnoargs.png)
+![no args](hello3.png)
+![no args](hello3.png)
+
 
 **Keys Pressed**
-&lt;up&gt; &lt;up&gt; &lt;up&gt; &lt;enter&gt; &lt;up&gt; &lt;up&gt; &lt;up&gt; &lt;enter&gt; 
+git add ListExamples.java &lt;enter&gt;
+git commit -m "Lab7" &lt;enter&gt;
+git push -u origin main &lt;enter&gt;
+git push &lt;enter&gt;
 
+**Commands and Effects Summary**
+
+I committed and pushed the resulting change to your Github account
 
 
 
