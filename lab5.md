@@ -54,7 +54,7 @@ Full Command Line to Trigger the Bug:
 
 Description of Bug Fix:
 
-In the processMatrixWithError method of MatrixProcessorWithError.java, you have to update the loop conditions to use < instead of <= to prevent accessing out-of-bounds indices:
+In the processMatrix method of MatrixProcessor.java, you have to update the loop conditions to use < instead of <= to prevent accessing out-of-bounds indices:
 
 ![Screenshot](successfulcode.png)
 
@@ -62,4 +62,4 @@ In the processMatrixWithError method of MatrixProcessorWithError.java, you have 
 
 ## Part 2 - Reflection
 
-
+During the second half of this quarter, I delved into the world of bash scripting and learned how to create and execute .sh files. This  skill allowed me to automate repetitive tasks, enhance workflow efficiency, and gain a deeper understanding of command-line operations. As a result, I've successfully streamlined various facets of my lab work, allowing for more efficient and precise execution of tasks. I was really able to understand how simple it makes executing command-line operations when completing this lab report; the bash script saved a couple lines in the terminal every time I had to test the program or run it. 
