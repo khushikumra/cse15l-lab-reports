@@ -1,72 +1,71 @@
-# Lab 1 Report: Khushi Kumra 
-CSE 15L, Section 
-## cat command
-**Using command with no arguments**
 
 
-![no args](catnoargs.png)
+# Lab 5 Report: Khushi Kumra 
+CSE 15L
 
-The working directory here was home. There is no output here with no arguments because the cat command is meant to look for a file/directory and it can't find one because we haven't given it an argument, or in other words, something to find. Not an error.
+PLEASE READ: My github was showing the md file on the published page with the raw code, here is the path, and I can see the preview in github, which is what this pdf is!
+https://khushikumra.github.io/cse15l-lab-reports/lab5.md
 
+## Step 1 - Student Post
 
+Subject: Help! Unexpected Error in Matrix Processing
 
-**Using command w/ path to directory as argument**
+Hey everyone, I'm encountering a strange error in my Java program that deals with matrix processing. I've attached a screenshot below to show the issue.
 
+![Screenshot](studentissue.png)
 
-![direct](cddirectory.png)
-
-The working directory here was still home. The output was lecture1 is a directory because we gave cat the argument of a directory not a file, so the output explains that cat, like it normally would given a file, can't display the contents because lecture1 is a directory, not a file. Not an error.
-
-
-
-**Using command w/ path to file as argument**
-![no args](cdnoargs.png)
-
-Here, te working directory is still home. We used a path to direct cat to a specific file, in this case Hello.java. Because we directed it to Hello.java, which is a file, cat was able to display its contents, hence the output of the code contained in Hello.java.Not an error.
+The program is supposed to process a matrix and display the elements. However, I'm getting an error that I can't quite figure out. I suspect it has something to do with how I'm iterating through the matrix. Any suggestions on what might be causing this?
 
 
+## Step 2 - TA Response
 
-## cd command
-**Using command with no arguments**
+Subject: Re: Help! Unexpected Error in Matrix Processing
 
-
-![no args](cdnoarg.png)
-
-The working directory is home. cd takes us to the home directory of the user, which in this case, is just home because we haven't provided it with any arguments. Not an error.
-
-**Using command w/ path to directory as argument**
+Hey there! Thanks for reaching out. The error could be related to how you're iterating through the matrix. Maybe something about the loop conditions? Can you run the bash script and provide what the error message says?
 
 
-![direct](cddirectory2.png)
 
-The working directory is lecture 1. cd outputs the contents of the directory messages within lecture 1 because that's the path we provided as an argument. In this case, messages contains some text files, which is what cd tells us in the output. Not an error.
+## Step 3 - Student Result + Bug Description
 
-**Using command w/ path to file as argument**
-
-
-![no args](cdfile.png)
-
-The working directory is lecture1. We gave cd the argument of a file, which it is not meant to use. cd is meant to change the working directory, and a file is not a working directory therefore the output explains that Hello.java is not a directory and just a file. Not an error.
-
-## ls command
-**Using command with no arguments**
+![Screenshot](studentissueterminal.png)
 
 
-![no args](lsnoarg.png)
+Description of Bug:
 
-The working directory is home. ls with no arguments outputs the contents of the current working directory which is what we see here. Because our current working directory is home, that just means lecture 1. Not an error.
-
-**Using command w/ path to directory as argument**
+The program generates an ArrayIndexOutOfBoundsException when attempting to access an out-of-bounds index in the processMatrix method. This error is caused by the loop conditions using <= instead of <, leading to an attempt to access the nonexistent fourth row and fourth column in a 3x3 matrix.
 
 
-![direct](lsdirectory2.png)
 
-The working directory is still home. ls with the path to the lecture1 directory now outputs the contents of this directory, so in this case the contents of lecture1. Not an error.
+## Step 4 - Information
 
-**Using command/ path to file as argument**
+File & Directory Structure:
+
+- MatrixProcessor.java (Java file)
+- run.sh (Bash script)
+Contents of Each File Before Fixing the Bug:
+
+MatrixProcessor.java before fixing the bug:
 
 
-![no args](lsfile.png)
+![Screenshot](studentissue.png)
 
-The working directory is lecture1 here. ls with the input of Hello.java, or a file, just gives us information about the file, or in this case, just it's name. 
 
+run.sh:
+
+![Screenshot](runbeforerror.png)
+
+Full Command Line to Trigger the Bug:
+
+![Screenshot](terminalforerror.png)
+
+Description of Bug Fix:
+
+In the processMatrix method of MatrixProcessor.java, you have to update the loop conditions to use < instead of <= to prevent accessing out-of-bounds indices:
+
+![Screenshot](successfulcode.png)
+
+![Screenshot](successfulTerminal.png)
+
+## Part 2 - Reflection
+
+During the second half of this quarter, I delved into the world of bash scripting and learned how to create and execute .sh files. This  skill allowed me to automate repetitive tasks, enhance workflow efficiency, and gain a deeper understanding of command-line operations. As a result, I've successfully streamlined various facets of my lab work, allowing for more efficient and precise execution of tasks. I was really able to understand how simple it makes executing command-line operations when completing this lab report; the bash script saved a couple lines in the terminal every time I had to test the program or run it. 
