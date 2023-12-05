@@ -8,21 +8,24 @@ https://khushikumra.github.io/cse15l-lab-reports/lab5.md
 
 ## Step 1 - Student Post
 
-Subject: Help! Unexpected Error in Matrix Processing
+Subject: Help! Number Format Exception in Program
 
-Hey everyone, I'm encountering a strange error in my Java program that deals with matrix processing. I've attached a screenshot below to show the issue.
+Hey everyone, I'm currently working on a shopping cart program in Java, and I've run into a puzzling issue. In my recent output, I'm getting a NumberFormatException, and I'm trying to make sense of what might be causing it. The program reads data from a CSV file containing item names, quantities, and unit prices, then calculates the total cost after applying a discount. However, the terminal is showing an error related to number formatting. I suspect there might be an issue with how the program interprets the quantity or unit price. Any insights into what might be going wrong would be greatly appreciated!
 
-![Screenshot](studentissue.png)
 
-The program is supposed to process a matrix and display the elements. However, I'm getting an error that I can't quite figure out. I suspect it has something to do with how I'm iterating through the matrix. Any suggestions on what might be causing this?
+![Screenshot](bug1.png)
+
+![Screenshot](bugoutput.png)
+
+
+The program reads data from a CSV file containing item names, quantities, and unit prices, then calculates the total cost after applying a discount. However, the terminal is showing an error related to number formatting. I suspect there might be an issue with how the program interprets the quantity or unit price. Any insights into what might be going wrong would be greatly appreciated!
 
 
 ## Step 2 - TA Response
 
-Subject: Re: Help! Unexpected Error in Matrix Processing
+Subject: Re: Help! Number Format Exception in Program
 
-Hey there! Thanks for reaching out. The error could be related to how you're iterating through the matrix. Maybe something about the loop conditions? Can you run the bash script and provide what the error message says?
-
+Hi there! Thanks for reaching out. It looks like your program might be encountering an issue with the data parsing. According to the error message, take a look at line 12 when the integers get parsed into quantity. Follow this variable and make sure the values stay consisten. Additionally, basedon the error message, there might be an issue in the while loop? Keep in mind the loop regards throwing an exception - you may need to find a way to deal with that. 
 
 
 ## Step 3 - Student Result + Bug Description
@@ -32,8 +35,10 @@ Hey there! Thanks for reaching out. The error could be related to how you're ite
 
 Description of Bug:
 
-The program generates an ArrayIndexOutOfBoundsException when attempting to access an out-of-bounds index in the processMatrix method. This error is caused by the loop conditions using <= instead of <, leading to an attempt to access the nonexistent fourth row and fourth column in a 3x3 matrix.
 
+Bug Description:
+
+There were two initial bugs in the program. Firstly, a NumberFormatException arose due to the attempt to parse the "Quantity" string from the CSV header as an integer during data processing in the main method. Secondly, an ArrayIndexOutOfBoundsException occurred in the calculateDiscounts method when creating an array with a size of quantity - 1 and subsequently trying to access an element at index quantity in the main method. 
 
 
 ## Step 4 - Information
@@ -60,7 +65,7 @@ Full Command Line to Trigger the Bug:
 
 Description of Bug Fix:
 
-In the processMatrix method of MatrixProcessor.java, you have to update the loop conditions to use < instead of <= to prevent accessing out-of-bounds indices:
+The NumberFormat Exception was addressed by introducing a line to skip the header before entering the data processing loop. To resolve the IndexOutofBounds Exception, the array size was adjusted to quantity in the calculateDiscounts method, and the index was appropriately adjusted when accessing the array in the main method. These modifications collectively rectified the parsing and indexing errors, ensuring the proper execution of the shopping cart simulation.
 
 ![Screenshot](successfulcode.png)
 
