@@ -8,12 +8,13 @@ CSE 15L
 **Keys Pressed**
 
 
-ssh cs15lfa23at@ieng6.ucsd.edu&lt;enter&gt;(password)&lt;enter&gt;
+ssh kkumra@ieng6.ucsd.edu&lt;enter&gt;(password)&lt;enter&gt;cs15lwi24&lt;enter&gt;
+
 
 **Summary**
 
 
-I logged in to my ieng6 account.
+I logged in to my ieng6 account and started work for this class.
 
 ## Step 5
 
@@ -29,7 +30,7 @@ git clone git@github.com:khushikumra/lab7.1.git&lt;enter&gt;
 **Summary**
 
 
-The lab7 file was git cloned into my home directory on EdStem. I had to save it as 7.1 because I had already cloned lab7 into EdStem, so I changed the newly forked repository name. 
+The lab7 file was git cloned into my home directory on EdStem. I had to save it as 7.1 because I had already cloned lab7 into EdStem, so I changed the forked repository name. 
 
 
 ## Step 6
