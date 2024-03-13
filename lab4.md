@@ -3,7 +3,8 @@ CSE 15L
 ## Step 4
 
 
-![no args](sunstep4.png)
+![no args](lab4.1.png)
+![no args](lab4.2.png)
 
 **Keys Pressed**
 
@@ -19,7 +20,7 @@ I logged in to my ieng6 account and started work for this class.
 ## Step 5
 
 
-![no args](sunstep5.png)
+![no args](la4.3.png)
 
 **Keys Pressed**
 
@@ -30,48 +31,49 @@ git clone git@github.com:khushikumra/lab7.1.git&lt;enter&gt;
 **Summary**
 
 
-The lab7 file was git cloned into my home directory on EdStem. I had to save it as 7.1 because I had already cloned lab7 into EdStem, so I changed the forked repository name. 
+I git cloned the lab 7 repository that I forked on my github into the workspace to import lab7. 
 
 
 ## Step 6
 
 
-![no args](hello1.png)
+![no args](lab4.4.png)
 
 
 **Keys Pressed**
 
 
-./test.sh &lt;enter&gt;
+cd lab7 &lt;enter&gt; ./test.sh &lt;enter&gt; ls&lt;enter&gt; chmod u+x test.sh&lt;enter&gt;  ./test.sh &lt;enter&gt;
 
 
 
 **Commands and Effects Summary** 
 
-I ran the bash script, test.sh to see the tests fail.  
+I first cd'd into the lab7 directory, and from there I tried running the bash script, test.sh. 
+The file originally denied me permission to run the tests, so I debugged that by first using ls to ensure test.sh exists in the directory, then I ran the chmod command to change the permission of the file and give me permission to run the script. Then, I ran the bash script test.sh again to see that the tests fail. 
 
 
 ## Step 7
 
 
-![no args](sunstep7.png)
+![no args](lab4.5.png)
 
 
 **Keys Pressed**
 
 
-vim ListExamples.java &lt;enter&gt; 42(j) 11(l) i2 &lt;esc&gt; l dl :wq &lt;enter&gt;
+vim ListExamples.java &lt;enter&gt; 43(j) 11(l) i2 &lt;esc&gt; l dl :wq &lt;enter&gt;
 
 
 **Commands and Effects Summary**
-I used vim to edit ListExample.java, and used the vim commands to move the cursor to the final loop in merge, used the vim commands to move the cursor over index1 to change index1 to index2 in the final merge loop to increment index2. 
+I used vim to edit ListExample.java, and used the vim commands to move the cursor to the final loop in merge, used the vim commands to move the cursor over index1 to change index1 to index2 in the final merge loop to increment index2. Then I exited out of vim. 
 
 
 
 ## Step 8
 
 
-![no args](hello2.png)
+![no args](lab4.6.png)
 
 **Keys Pressed**
 ./test.sh &lt;enter&gt;
@@ -87,8 +89,8 @@ I ran the bash script, test.sh to see the tests succeed, which they did as seen.
 ## Step 9
 
 
-![no args](hello3.png)
-![no args](hello3.png)
+![no args](lab4.7.png)
+![no args](lab4.8.png)
 
 
 **Keys Pressed**
@@ -99,10 +101,4 @@ git push &lt;enter&gt;
 
 **Commands and Effects Summary**
 
-I committed and pushed the resulting change to your Github account
-
-
-
-**Commands and Effects Summary**
-
-went up three time o access javac -cp command. went up another three times to acces java -cp command
+I committed and pushed the resulting change to my Github account. 
