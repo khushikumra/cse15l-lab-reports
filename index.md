@@ -1,104 +1,71 @@
-# Lab 4 Report: Khushi Kumra 
+
+
+# Lab 5 Report: Khushi Kumra 
 CSE 15L
-## Step 4
 
 
-![no args](lab4.1.png)
-![no args](lab4.2.png)
+## Step 1 - Student Post
 
-**Keys Pressed**
+Subject: Help! Unexpected Error in Matrix Processing
 
+Hey everyone, I'm encountering a strange error in my Java program that deals with matrix processing. I've attached a screenshot below to show the issue.
 
-ssh kkumra@ieng6.ucsd.edu&lt;enter&gt;(password)&lt;enter&gt;cs15lwi24&lt;enter&gt;
+![Screenshot](studentissue.png)
 
-
-**Summary**
-
-
-I logged in to my ieng6 account and started work for this class.
-
-## Step 5
+The program is supposed to process a matrix and display the elements. However, I'm getting an error that I can't quite figure out. I suspect it has something to do with how I'm iterating through the matrix. Any suggestions on what might be causing this?
 
 
-![no args](la4.3.png)
+## Step 2 - TA Response
 
-**Keys Pressed**
+Subject: Re: Help! Unexpected Error in Matrix Processing
 
-
-git clone git@github.com:khushikumra/lab7.1.git&lt;enter&gt;
-
-
-**Summary**
-
-
-I git cloned the lab 7 repository that I forked on my github into the workspace to import lab7. 
-
-
-## Step 6
-
-
-![no args](lab4.4.png)
-
-
-**Keys Pressed**
-
-
-cd lab7 &lt;enter&gt; ./test.sh &lt;enter&gt; ls&lt;enter&gt; chmod u+x test.sh&lt;enter&gt;  ./test.sh &lt;enter&gt;
+Hey there! Thanks for reaching out. The error could be related to how you're iterating through the matrix. Maybe something about the loop conditions? Can you run the bash script and provide what the error message says?
 
 
 
-**Commands and Effects Summary** 
+## Step 3 - Student Result + Bug Description
 
-I first cd'd into the lab7 directory, and from there I tried running the bash script, test.sh. 
-The file originally denied me permission to run the tests, so I debugged that by first using ls to ensure test.sh exists in the directory, then I ran the chmod command to change the permission of the file and give me permission to run the script. Then, I ran the bash script test.sh again to see that the tests fail. 
-
-
-## Step 7
+![Screenshot](studentissueterminal.png)
 
 
-![no args](lab4.5.png)
+Description of Bug:
 
-
-**Keys Pressed**
-
-
-vim ListExamples.java &lt;enter&gt; 43(j) 11(l) i2 &lt;esc&gt; l dl :wq &lt;enter&gt;
-
-
-**Commands and Effects Summary**
-I used vim to edit ListExample.java, and used the vim commands to move the cursor to the final loop in merge, used the vim commands to move the cursor over index1 to change index1 to index2 in the final merge loop to increment index2. Then I exited out of vim. 
+The program generates an ArrayIndexOutOfBoundsException when attempting to access an out-of-bounds index in the processMatrix method. This error is caused by the loop conditions using <= instead of <, leading to an attempt to access the nonexistent fourth row and fourth column in a 3x3 matrix.
 
 
 
-## Step 8
+## Step 4 - Information
+
+### File & Directory Structure:
+
+- MatrixProcessor.java (Java file)
+- run.sh (Bash script)
+
+  
+### Contents of Each File Before Fixing the Bug:
+
+MatrixProcessor.java before fixing the bug:
 
 
-![no args](lab4.6.png)
-
-**Keys Pressed**
-./test.sh &lt;enter&gt;
+![Screenshot](studentissue.png)
 
 
-**Commands and Effects Summary**
+run.sh:
 
-I ran the bash script, test.sh to see the tests succeed, which they did as seen.  
+![Screenshot](runbeforerror.png)
 
+Full Command Line to Trigger the Bug:
 
+![Screenshot](terminalforerror.png)
 
+Description of Bug Fix:
 
-## Step 9
+In the processMatrix method of MatrixProcessor.java, you have to update the loop conditions to use < instead of <= to prevent accessing out-of-bounds indices:
 
+![Screenshot](successfulcode.png)
 
-![no args](lab4.7.png)
-![no args](lab4.8.png)
+![Screenshot](successfulTerminal.png)
 
+## Part 2 - Reflection
 
-**Keys Pressed**
-git add ListExamples.java &lt;enter&gt;
-git commit -m "Lab7" &lt;enter&gt;
-git push -u origin main &lt;enter&gt;
-git push &lt;enter&gt;
-
-**Commands and Effects Summary**
-
-I committed and pushed the resulting change to my Github account. 
+During the second half of this quarter, I delved into the world of bash scripting and learned how to create and execute .sh files. This  skill allowed me to automate repetitive tasks, enhance workflow efficiency, and gain a deeper understanding of command-line operations. As a result, I've successfully streamlined various facets of my lab work, allowing for more efficient and precise execution of tasks. I was really able to understand how simple it makes executing command-line operations when completing this lab report; the bash script saved a couple lines in the terminal every time I had to test the program or run it. 
