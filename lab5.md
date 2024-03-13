@@ -3,8 +3,6 @@
 # Lab 5 Report: Khushi Kumra 
 CSE 15L
 
-PLEASE READ: My github was showing the md file on the published page with the raw code, here is the path, and I can see the preview in github, which is what this pdf is!
-https://khushikumra.github.io/cse15l-lab-reports/lab5.md
 
 ## Step 1 - Student Post
 
@@ -38,11 +36,13 @@ The program generates an ArrayIndexOutOfBoundsException when attempting to acces
 
 ## Step 4 - Information
 
-File & Directory Structure:
+### File & Directory Structure:
 
 - MatrixProcessor.java (Java file)
 - run.sh (Bash script)
-Contents of Each File Before Fixing the Bug:
+
+  
+### Contents of Each File Before Fixing the Bug:
 
 MatrixProcessor.java before fixing the bug:
 
